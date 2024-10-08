@@ -7,6 +7,35 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <h1>Konversi Suhu</h1>
+    <div class="container">
+      <h1>Konversi Suhu</h1>
+      <p class="description">
+        Masukkan Suhu derajat Celcius (°C) ke kotak di bawah, lalu klik tombol
+        Konversi untuk mendapatkan hasil dalam Fahrenheit (°F).
+      </p>
+      <form class="form">
+        <label for="celcius">Celcius (°C):</label>
+        <textarea id="celcius" placeholder="Masukkan suhu dalam °C"></textarea>
+
+        <div class="button-container">
+          <button class="btn">Konversi</button>
+          <button class="btn">Reset</button>
+          <button class="btn">Reverse</button>
+        </div>
+
+        <label for="fahrenheit">Fahrenheit (°F):</label>
+        <textarea id="fahrenheit" placeholder="Hasil dalam °F"></textarea>
+      </form>
+      <a href="">Fahrenheit ke Celcius</a>
+      <h2>Cara Konversi dari Celcius (°C) ke Fahrenheit (°F)</h2>
+      <hr />
+      <p>
+        Suhu S dalam derajat Fahrenheit (°F) sama dengan suhu S dalam derajat
+        Celcius (°C) kali 9/5 tambah 32.
+      </p>
+      <p>S<sub>(°F)</sub> = (S<sub>(°C)</sub> × 9/5) + 32</p>
+      <p>atau</p>
+      <p><p>S<sub>(°F)</sub> = (S<sub>(°C)</sub> × 1.8) + 32</p></p>
+    </div>
   </body>
 </html>
