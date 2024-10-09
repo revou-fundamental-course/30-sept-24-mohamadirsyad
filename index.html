@@ -10,34 +10,69 @@
     <div class="container">
       <h1>Konversi Suhu</h1>
       <p class="description">
-        Masukkan Suhu derajat Celcius (°C) ke kotak di bawah, lalu klik tombol
-        Konversi untuk mendapatkan hasil dalam Fahrenheit (°F).
+        Masukkan suhu dalam derajat Celcius (°C) ke kotak di bawah, lalu klik
+        tombol Konversi untuk mendapatkan hasil dalam Fahrenheit (°F).
       </p>
       <form class="form">
         <label for="celcius">Celcius (°C):</label>
         <textarea id="celcius" placeholder="Masukkan suhu dalam °C"></textarea>
 
         <div class="button-container">
-          <button class="btn">Konversi</button>
-          <button class="btn">Reset</button>
-          <button class="btn">Reverse</button>
+          <button type="button" class="btn" id="convert-btn">Konversi</button>
+          <button type="button" class="btn" id="reset-btn">Reset</button>
+          <button type="button" class="btn" id="reverse-btn">Reverse</button>
         </div>
 
         <label for="fahrenheit">Fahrenheit (°F):</label>
         <textarea id="fahrenheit" placeholder="Hasil dalam °F"></textarea>
-        <label for="kalkulasi">Cara kalkulasi:</label>
-        <textarea id="kalkulasi" placeholder="cara kalkulasi"></textarea>
+
+        <label for="kalkulasi">Cara Kalkulasi:</label>
+        <textarea
+          id="kalkulasi"
+          readonly
+          placeholder="cara kalkulasi"
+        ></textarea>
       </form>
-      <a href="">Fahrenheit ke Celcius</a>
+
+      <a href="#" id="fahrenheitToCelsius">Fahrenheit ke Celcius</a>
+
+      <div id="fahrenheit-section" style="display: none">
+        <h2>Konversi Fahrenheit ke Celcius</h2>
+        <form class="form">
+          <label for="fahrenheit-input">Fahrenheit (°F):</label>
+          <textarea
+            id="fahrenheit-input"
+            placeholder="Masukkan suhu dalam °F"
+          ></textarea>
+
+          <div class="button-container">
+            <button type="button" class="btn" id="convert-fahrenheit-btn">
+              Konversi
+            </button>
+            <button type="button" class="btn" id="reset-fahrenheit-btn">
+              Reset
+            </button>
+          </div>
+
+          <label for="celcius-result">Celcius (°C):</label>
+          <textarea id="celcius-result" placeholder="Hasil dalam °C"></textarea>
+
+          <label for="kalkulasi-fahrenheit">Cara Kalkulasi:</label>
+          <textarea
+            id="kalkulasi-fahrenheit"
+            readonly
+            placeholder="cara kalkulasi"
+          ></textarea>
+        </form>
+      </div>
+
       <h2>Cara Konversi dari Celcius (°C) ke Fahrenheit (°F)</h2>
       <hr />
-      <p>
-        Suhu S dalam derajat Fahrenheit (°F) sama dengan suhu S dalam derajat
-        Celcius (°C) kali 9/5 tambah 32.
-      </p>
       <p>S<sub>(°F)</sub> = (S<sub>(°C)</sub> × 9/5) + 32</p>
       <p>atau</p>
-      <p><p>S<sub>(°F)</sub> = (S<sub>(°C)</sub> × 1.8) + 32</p></p>
+      <p>S<sub>(°F)</sub> = (S<sub>(°C)</sub> × 1.8) + 32</p>
     </div>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
